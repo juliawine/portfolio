@@ -38,6 +38,7 @@
     --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+    --green: #048a04;
 
 
     --container-max-width: 1180px;
@@ -201,7 +202,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--green);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -219,7 +220,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  var(--green);
     font-weight: 400;
 }
 
@@ -243,20 +244,20 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--green);
 }
 
-.btn--pink {
-    background: var(--pink);
+.btn--green {
+    background: var(--green);
     transition: all 0.2s;
 }
 
-.btn--pink::after {
+.btn--green::after {
     display: none;
 }
 
-.btn--pink:hover,
-.btn--pink:focus {
+.btn--green:hover,
+.btn--green:focus {
     background: transparent;
 }
 
@@ -308,7 +309,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--green);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -405,7 +406,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+        url('./images/foggy_landscape.JPG');
     height: 100vh;
     background-size: cover;
     background-position: center;
