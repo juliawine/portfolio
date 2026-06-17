@@ -6,7 +6,7 @@
   <link rel="shortcut icon" type="image/png" href="./images/foggy_landscape.JPG" />
   <title>Julia Wine</title>
   <meta name="description" content="Recent graduate interested in fire ecology and land stewardship." />
-  <meta name="keywords" content="Julia Wine, ecology, fire ecology, statistics, research, wildland fire, prescribed fire" />
+  <meta name="keywords" content="Julia Wine, ecology, conservation, science, fire ecology, statistics, research, wildland fire, prescribed fire, Rx fire" />
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
@@ -33,6 +33,74 @@
       </div>
     </div>
   </header>
+
+  <main>
+
+    <!-- About teaser -->
+    <section class="home-about">
+      <div class="row">
+        <h2>About Me</h2>
+        <p>
+          I'm a recent graduate interested in fire ecology and land stewardship,
+          focused on understanding how fire shapes landscapes and how communities
+          can work with fire.
+        </p>
+        <a href="about.html" class="link__text">Read more<span>→</span></a>
+      </div>
+    </section>
+
+    <!-- Photo strip -->
+    <section class="home-gallery">
+      <div class="row">
+        <h2>In the Field</h2>
+        <div class="gallery">
+          <div class="gallery__thumb" data-full="./images/shenandoah_sunset.jpg" data-caption="Sunset over Shenandoah National Park, VA">
+            <img src="./images/shenandoah_sunset.jpg" alt="Sunset over Shenandoah National Park, VA" />
+            <div class="gallery__overlay">View</div>
+          </div>
+          <div class="gallery__thumb" data-full="./images/redwood_landscape.jpeg" data-caption="View of mountainous redwood forests from a forest road in California">
+            <img src="./images/redwood_landscape.jpeg" alt="Redwood forest in California" />
+            <div class="gallery__overlay">View</div>
+          </div>
+          <div class="gallery__thumb" data-full="./images/doug_fir.jpg" data-caption="Old Douglas-fir from a field site in California">
+            <img src="./images/doug_fir.jpg" alt="Douglas-fir in California" />
+            <div class="gallery__overlay">View</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="mailto:juliawine93@gmail.com">
+            <img src="./images/email-icon.svg" alt="Email" class="footer__social-image" />
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/juliawine" target="_blank" rel="noopener noreferrer">
+            <img src="./images/linkedin.svg" alt="LinkedIn" class="footer__social-image" />
+          </a>
+        </li>
+      </ul>
+      <p>&copy; 2026 Julia Wine</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox (needed for the photo strip's click-to-enlarge) -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightbox-img" class="lightbox__img" />
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox__prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox__next" id="lightbox-next" aria-label="Next">&#8250;</button>
+  </div>
 
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
