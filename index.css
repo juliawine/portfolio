@@ -35,7 +35,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #1f6feb;
+    --pink: #048a04;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
     --green: #048a04;
@@ -795,4 +795,30 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 500px) {
     .footer { padding: var(--gutter-medium) 0; }
+}
+
+/* --------------------------------------- */
+/* ----- Copy Email Toast ----- */
+/* --------------------------------------- */
+
+.copy-toast {
+    position: fixed;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(1rem);
+    background: var(--green);
+    color: var(--white);
+    font-family: 'Jost', sans-serif;
+    font-size: var(--font-size-small);
+    padding: 1rem 2.5rem;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    z-index: 1100;
+}
+
+.copy-toast.is-visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }

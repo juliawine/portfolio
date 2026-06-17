@@ -41,3 +41,39 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+// Copy email to clipboard
+(function () {
+  const copyTargets = document.querySelectorAll('[data-copy-email]');
+  if (!copyTargets.length) return;
+
+  let toast = document.querySelector('.copy-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.className = 'copy-toast';
+    toast.setAttribute('role', 'status');
+    document.body.appendChild(toast);
+  }
+
+  let toastTimeout;
+  function showToast(message) {
+    toast.textContent = message;
+    toast.classList.add('is-visible');
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(function () {
+      toast.classList.remove('is-visible');
+    }, 2000);
+  }
+
+  copyTargets.forEach(function (el) {
+    el.addEventListener('click', function () {
+      const email = el.getAttribute('data-copy-email');
+      if (!email || !navigator.clipboard) return;
+      navigator.clipboard.writeText(email).then(function () {
+        showToast('Email copied to clipboard!');
+      }).catch(function () {
+        // Clipboard API unavailable — mailto link still works as fallback
+      });
+    });
+  });
+})();
