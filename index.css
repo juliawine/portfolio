@@ -332,6 +332,7 @@ body:not(.user-is-tabbing) a:focus {
 .topnav__link:hover,
 .topnav__link--active {
     color: var(--pink);
+    text-decoration: none;
 }
 
 @media(max-width: 600px) {
@@ -357,7 +358,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     align-items: center;
     border-bottom: var(--border-light);
-    padding-top: 15rem;
+    padding-top: 7rem;
 }
 
 .page-banner__text {
