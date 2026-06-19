@@ -36,11 +36,11 @@
         <div class="tabs" role="tablist">
           <button class="tab tab--active" role="tab" aria-selected="true" aria-controls="panel-thesis" id="tab-thesis">Thesis</button>
           <button class="tab" role="tab" aria-selected="false" aria-controls="panel-fieldwork" id="tab-fieldwork">Field Work &amp; Research</button>
-          <button class="tab" role="tab" aria-selected="false"  aria-controls="panel-scicomm"  id="tab-scicomm">Science Communication</button>
+          <button class="tab tab--hidden" role="tab" aria-selected="false"  aria-controls="panel-scicomm"  id="tab-scicomm">Science Communication</button>
         </div>
 
         <!-- Thesis panel -->
-<div class="tab-panel tab-panel--hidden" id="panel-thesis" role="tabpanel" aria-labelledby="tab-thesis">
+<div class="tab-panel tab-panel--active" id="panel-thesis" role="tabpanel" aria-labelledby="tab-thesis">
   <p class="work-section__intro">
     My M.S. thesis research focused on evaluating fuel treatment effectiveness and prioritizing placement of fuel treatments on industrially managed coast redwood forests.
   </p>
@@ -62,11 +62,11 @@
         <img src="./images/thesis_pics/field (3).jpg" alt="Field work photo" />
         <div class="gallery__overlay">View</div>
       </div>
-      <div class="gallery__thumb" data-full="./images/thesis_pics/field (1).jpg" data-caption="Field work, 2024">
+      <div class="gallery__thumb" data-full="./images/thesis_pics/field (26).jpg" data-caption="Field work, 2024">
         <img src="./images/thesis_pics/field (26).jpg" alt="Field work photo" />
         <div class="gallery__overlay">View</div>
       </div>
-      <div class="gallery__thumb" data-full="./images/thesis_pics/field (1).jpg" data-caption="Field work, 2024">
+      <div class="gallery__thumb" data-full="./images/thesis_pics/field (27).jpg" data-caption="Field work, 2024">
         <img src="./images/thesis_pics/field (27).jpg" alt="Field work photo" />
         <div class="gallery__overlay">View</div>
       </div>
@@ -94,10 +94,7 @@
         <img src="./images/thesis_pics/field (8).jpg" alt="Field work photo" />
         <div class="gallery__overlay">View</div>
       </div>
-      <div class="gallery__thumb" data-full="./images/thesis_pics/field (9).jpg" data-caption="Field work, 2025">
-        <img src="./images/thesis_pics/field (9).jpg" alt="Field work photo" />
-        <div class="gallery__overlay">View</div>
-      </div>
+
       <div class="gallery__thumb" data-full="./images/thesis_pics/field (10).jpg" data-caption="Field work, 2025">
         <img src="./images/thesis_pics/field (10).jpg" alt="Field work photo" />
         <div class="gallery__overlay">View</div>
@@ -191,7 +188,7 @@
         </div>
 
         <!-- Science Communication panel -->
-        <div class="tab-panel" id="panel-scicomm" role="tabpanel" aria-labelledby="tab-scicomm">
+        <div class="tab-panel tab-panel--hidden" id="panel-scicomm" role="tabpanel" aria-labelledby="tab-scicomm">
           <p class="work-section__intro">
             Sharing fire ecology and land stewardship stories with broader audiences through
             social media, interpretation, and public outreach.
