@@ -358,7 +358,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     align-items: center;
     border-bottom: var(--border-light);
-    padding-top: 7rem;
+    padding-top: 10rem;
 }
 
 .page-banner__text {
