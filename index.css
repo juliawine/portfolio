@@ -280,6 +280,66 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 500px) { .back-to-top { right: 1rem; } }
 
 /* --------------------------------------- */
+/* ----- Top Nav (new combined header) ----- */
+/* --------------------------------------- */
+
+.topnav {
+    background: var(--black);
+    border-bottom: var(--border-light);
+}
+
+.topnav__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gutter-small) 0;
+}
+
+.topnav__home {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: var(--font-size-normal);
+    transition: color 0.2s;
+}
+
+.topnav__home:hover {
+    color: var(--pink);
+}
+
+.topnav__items {
+    display: flex;
+    list-style: none;
+}
+
+.topnav__item:not(:last-child) {
+    margin-right: var(--gutter-medium);
+}
+
+.topnav__link {
+    color: var(--white-1);
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    transition: color 0.2s;
+    padding: 0.5rem 0;
+}
+
+.topnav__link:hover,
+.topnav__link--active {
+    color: var(--pink);
+}
+
+@media(max-width: 600px) {
+    .topnav__row {
+        flex-direction: column;
+        gap: var(--gutter-small);
+    }
+    .topnav__item:not(:last-child) {
+        margin-right: var(--gutter-normal);
+    }
+}
+
+/* --------------------------------------- */
 /* ----- Navigation ----- */
 /* --------------------------------------- */
 
@@ -793,6 +853,14 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-image { height: 4rem; }
+
+.footer__email-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0;
+}
 
 @media(max-width: 500px) {
     .footer { padding: var(--gutter-medium) 0; }
