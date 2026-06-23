@@ -334,6 +334,7 @@ body:not(.user-is-tabbing) a:focus {
 .topnav__link--active {
     color: var(--pink);
     text-decoration: none;
+    font-size: var(--font-size-medium);
 }
 
 @media(max-width: 600px) {
